@@ -7,7 +7,7 @@ class Main {
     ArrayList<String> name = new ArrayList<String>();
     ArrayList<String> sNum = new ArrayList<String>();
     ArrayList<Integer> val = new ArrayList<Integer>();
-
+//
     
     
     boolean option = true;
