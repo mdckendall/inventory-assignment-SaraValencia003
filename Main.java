@@ -39,10 +39,12 @@ class Main {
       }
       if(num.equals("3")){
         System.out.println("Enter the serial number of the item to change:");
-        String change = scanner.nextLine();
-        int index1 = name.indexOf(change);
+        String change = scanner.nextLine(); // get serial num
+        int index1 = sNum.indexOf(change); // get # index of serial num
+
+        
         System.out.println("Enter the new name:");
-        String cname = scanner.nextLine();
+        String cname = scanner.nextLine(); // get new name
         name.set(index1, cname);
         System.out.println("Enter the new value in dollars (whole number):");
         int cval = scanner.nextInt();
