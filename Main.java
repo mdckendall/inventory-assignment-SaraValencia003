@@ -8,7 +8,6 @@ class Main {
     ArrayList<String> sNum = new ArrayList<String>();
     ArrayList<Integer> val = new ArrayList<Integer>();
 
-
     
     
     boolean option = true;
@@ -24,15 +23,19 @@ class Main {
         sNum.add(sNum1);
         System.out.println("Enter the value in dollars (whole number):");
         int val1 = scanner.nextInt();
+        String val1S = scanner.nextLine();
         val.add(val1);
+        
       }
       if(num.equals("2")){
         System.out.println("Enter the serial number of the item to delete:");
         String delete = scanner.nextLine();
+
         int index = name.indexOf(delete);
-        name.remove(delete);
+        name.remove(index);
         sNum.remove(index);
         val.remove(index); 
+        
       }
       if(num.equals("3")){
         System.out.println("Enter the serial number of the item to change:");
@@ -43,12 +46,15 @@ class Main {
         name.set(index1, cname);
         System.out.println("Enter the new value in dollars (whole number):");
         int cval = scanner.nextInt();
+        String cvalS = scanner.nextLine();
         val.set(index1, cval);
+        
         
       }
       if(num.equals("4")){
         for(int i = 0; i < name.size(); i++){
           System.out.println(name.get(i) + "," + sNum.get(i) + "," + val.get(i));
+          
         }
       }
       if(num.equals("5")){
